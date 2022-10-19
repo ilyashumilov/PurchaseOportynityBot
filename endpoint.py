@@ -5,19 +5,13 @@ import sys
 from main import handler
 import os
 import logging
+
 app = Flask(__name__)
 
-def send_message(chat_id, text):
-    method = "sendMessage"
-    token = "840446984:AAFuVTW-FYP5tJVu8mqhc9y4E0j1fr2lCD0"
-    url = f"https://api.telegram.org/bot{token}/{method}"
-    data = {"chat_id": chat_id, "text": text}
-    requests.post(url, data=data)
-
-@app.route("/", methods=["GET", "POST"])
+@app.route("/", methods=["POST"])
 def receive_update():
     if request.method == "POST":
-        logging.info('sdfsdf')
+        logging.info('API call')
         # logging.info(request.get_json())
         print(request.get_json(), flush=True)
         msg = {
