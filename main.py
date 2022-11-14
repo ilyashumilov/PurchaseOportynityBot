@@ -104,7 +104,7 @@ def handler(message):
         # print(globals(), flush=True)
         print(globals()[message.chat.id], flush=True)
 
-        bot.send_message(message.chat.id], text='Your opportunity has been recorded!')
+        bot.send_message(message.chat.id, text='Your opportunity has been recorded!')
 
         print(globals()[message.chat.id], flush=True)
 
