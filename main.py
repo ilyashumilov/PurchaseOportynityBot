@@ -11,7 +11,7 @@ def handler(message):
     try:
         if message.text == '/start':
             globals()[message.chat.id] = list()
-            bot.send_message(message.chat.id, f"Hi, {message['from']}! I'll help you to register your opportunity.")
+            bot.send_message(message.chat.id, f"Hi, {message.from_user.first_name}! I'll help you to register your opportunity.")
             print(message,flush=True)
             print(message.from_user.first_name,flush=True)
 
