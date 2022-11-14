@@ -125,8 +125,8 @@ def handler(message):
             del globals()[message.chat.id]
         elif message.text.isnumeric():
             globals()[message.chat.id].append(message.text)
-    except:
-        pass
+    except Exception as e:
+        print(e)
 
 bot.polling(none_stop=True)
 
