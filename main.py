@@ -6,6 +6,7 @@ from globals import *
 token = '5724247177:AAHqQx7yJY-QHpLTvlS0m0kHJIFZjWKZ6yo'
 bot = telebot.TeleBot(token)
 
+@bot.message_handler(content_types=['text'])
 def handler(message):
     if message['text'] == '/start':
         globals()[message['id']] = list()
@@ -124,5 +125,5 @@ def handler(message):
     elif message['text'].isnumeric():
         globals()[message['id']].append(message['text'])
 
-# bot.polling(none_stop=True)
+bot.polling(none_stop=True)
 
