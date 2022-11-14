@@ -104,11 +104,11 @@ def handler(message):
         # print(globals(), flush=True)
         print(globals()[message.chat.id], flush=True)
 
-        bot.send_message(message.chat.id, text='Your opportunity has been recorded!')
+        bot.send_message(message.chat.id], text='Your opportunity has been recorded!')
 
-        print(globals()[message.chat.id, flush=True)
+        print(globals()[message.chat.id], flush=True)
 
-        print(globals()[message.chat.id, flush=True)
+        print(globals()[message.chat.id], flush=True)
 
         msg = f'The new {globals()[message["id"]][1]} from {globals()message.chat.id][0]}:\n' \
               f'Country: {globals()[message["id"]][2]}\n'\
