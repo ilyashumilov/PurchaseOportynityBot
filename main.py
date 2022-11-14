@@ -110,7 +110,7 @@ def handler(message):
 
         print(globals()[message.chat.id], flush=True)
 
-        msg = f'The new {globals()[message["id"]][1]} from {globals()message.chat.id][0]}:\n' \
+        msg = f'The new {globals()[message["id"]][1]} from {globals()[message.chat.id][0]}:\n' \
               f'Country: {globals()[message["id"]][2]}\n'\
               f'Grade: {globals()[message.chat.id][3]}\n'\
               f'Incoterm: {globals()[message.chat.id][4]}\n'\
