@@ -58,7 +58,6 @@ def handler(message):
 
         elif message.text in globals()['countries']:
             markup = types.ReplyKeyboardMarkup()
-            print('Done',message['text'],flush=True)
             for i in globals()['match'][globals()[message.chat.id][0]]['G']:
                 item = types.KeyboardButton(i)
                 markup.add(item)
