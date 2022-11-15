@@ -25,7 +25,7 @@ def handler(message):
 
                 bot.send_message(message.chat.id, text='Are you going to buy or sell?', reply_markup=markup)
 
-                globals()[message.chat.id].append(message['from'])
+                globals()[message.chat.id].append(message.from_user.first_name)
 
             if message.from_user.first_name not in globals()['traders']:
                 markup1 = types.ReplyKeyboardMarkup()
