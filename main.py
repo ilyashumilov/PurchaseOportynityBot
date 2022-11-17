@@ -6,7 +6,6 @@ from globals import *
 token = '5724247177:AAHqQx7yJY-QHpLTvlS0m0kHJIFZjWKZ6yo'
 bot = telebot.TeleBot(token)
 
-apihelper.ENABLE_MIDDLEWARE = True
 apihelper.SESSION_TIME_TO_LIVE = 5 * 60
 
 @bot.message_handler(content_types=['text'])
